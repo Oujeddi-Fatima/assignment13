@@ -1,0 +1,6 @@
+<p>
+    List Of students :
+</p>
+<ul>
+    <li *ngFor="let student of students; let i index"><a [routerLink]="['profile',student.id]">{{student.name}}</a>
+</ul>
